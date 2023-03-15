@@ -16,8 +16,6 @@ import NFT_ABI from "./abis/NFT.json";
 import config from './config.json'; */
 
 const NFT_CONTRACT_ADDRESS = "0x41002cE425978937DaFE3dB0465dB8D6C392E965";
-/* - Goerli - 0x41002cE425978937DaFE3dB0465dB8D6C392E965
-- Sepolia - 0xc40cD860a5af0383Bd61a52eC1094cF9A9227aA3 */
 
 function App() {
     const [provider, setProvider] = useState(null);
@@ -141,10 +139,6 @@ function App() {
         const web3Provider = new providers.Web3Provider(provider);
 
         // If user is not connected to the Goerli network, let them know and throw an error
-        /*  chain ID for networks:
-        Goerli - 5
-        Mumbai - 80001
-        Sepolia - 11155111 */
         const { chainId } = await web3Provider.getNetwork();
         if (chainId !== 5) {
             window.alert("Change the network to Goerli");
