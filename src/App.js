@@ -75,7 +75,7 @@ function App() {
       url: URL,
       method: "POST",
       headers: {
-        Authorization: `Bearer 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`,
+        Authorization: `Bearer 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`,
         Accept: "application/json",
         "Content-Type": "application/json",
       },
