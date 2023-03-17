@@ -15,7 +15,7 @@ import NFT_ABI from "./abis/NFT.json";
 /* // Config
 import config from './config.json'; */
 
-const NFT_CONTRACT_ADDRESS = "0x41002cE425978937DaFE3dB0465dB8D6C392E965";
+const NFT_CONTRACT_ADDRESS = "0x3D08097D427FbE64B719a356B207c959dCaB12BB";
 
 function App() {
   const [provider, setProvider] = useState(null);
