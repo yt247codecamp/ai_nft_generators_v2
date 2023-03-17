@@ -15,7 +15,7 @@ import NFT_ABI from "./abis/NFT.json";
 /* // Config
 import config from './config.json'; */
 
-const NFT_CONTRACT_ADDRESS = "0x3D08097D427FbE64B719a356B207c959dCaB12BB";
+const NFT_CONTRACT_ADDRESS = "0x94855b0bF299BcCA8eC4225469FC6cBfbA774c07";
 
 function App() {
   const [provider, setProvider] = useState(null);
@@ -75,7 +75,7 @@ function App() {
       url: URL,
       method: "POST",
       headers: {
-        Authorization: `Bearer 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`,
+        Authorization: `Bearer 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`,
         Accept: "application/json",
         "Content-Type": "application/json",
       },
@@ -102,7 +102,7 @@ function App() {
     // Create instance to NFT.Storage
     const nftstorage = new NFTStorage({
       token:
-        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkaWQ6ZXRocjoweEUzNjNiQmU4QTQ2NGIxM2VGQzNmRjI2NUI1RTc4YTE4NjUwNDNGYzciLCJpc3MiOiJuZnQtc3RvcmFnZSIsImlhdCI6MTY3NjI3Mjc0Mzg5MSwibmFtZSI6ImFwaS1rZXkifQ.sqxP6OHUQbMNt_UmdorAnpeTliedtltmQL-z0DasTLg",
+        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkaWQ6ZXRocjoweDE4QUJkNjc2ODUyQzJlNTNFMWMyNjM5NzI1RDRCYjFjQWJkYzk1YTYiLCJpc3MiOiJuZnQtc3RvcmFnZSIsImlhdCI6MTY3OTAyMTg1MDE3MiwibmFtZSI6Ik5GVCBHZW5lcmF0b3IifQ.mCIFiTfkpmIZjBH18zcqGa3HPWO6htgbTsWUIN1hcL4",
     });
 
     // Send request to store image
