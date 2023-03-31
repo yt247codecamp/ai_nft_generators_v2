@@ -15,7 +15,7 @@ import NFT_ABI from "./abis/NFT.json";
 /* // Config
 import config from './config.json'; */
 
-const NFT_CONTRACT_ADDRESS = "0x94855b0bF299BcCA8eC4225469FC6cBfbA774c07";
+const NFT_CONTRACT_ADDRESS = "-----";
 
 function App() {
   const [provider, setProvider] = useState(null);
@@ -75,7 +75,7 @@ function App() {
       url: URL,
       method: "POST",
       headers: {
-        Authorization: `Bearer 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`,
+        Authorization: `Bearer -----`,
         Accept: "application/json",
         "Content-Type": "application/json",
       },
@@ -102,7 +102,7 @@ function App() {
     // Create instance to NFT.Storage
     const nftstorage = new NFTStorage({
       token:
-        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkaWQ6ZXRocjoweDE4QUJkNjc2ODUyQzJlNTNFMWMyNjM5NzI1RDRCYjFjQWJkYzk1YTYiLCJpc3MiOiJuZnQtc3RvcmFnZSIsImlhdCI6MTY3OTAyMTg1MDE3MiwibmFtZSI6Ik5GVCBHZW5lcmF0b3IifQ.mCIFiTfkpmIZjBH18zcqGa3HPWO6htgbTsWUIN1hcL4",
+        "-----",
     });
 
     // Send request to store image
@@ -135,11 +135,11 @@ function App() {
     const provider = await web3ModalRef.current.connect();
     const web3Provider = new providers.Web3Provider(provider);
 
-    // If user is not connected to the Goerli network, let them know and throw an error
+    // If user is not connected to the Mumbai network, let them know and throw an error
     const { chainId } = await web3Provider.getNetwork();
-    if (chainId !== 5) {
-      window.alert("Change the network to Goerli");
-      throw new Error("Change network to Goerli");
+    if (chainId !== 80001) {
+      window.alert("Change the network to Mumbai");
+      throw new Error("Change network to Mumbai");
     }
 
     if (needSigner) {
